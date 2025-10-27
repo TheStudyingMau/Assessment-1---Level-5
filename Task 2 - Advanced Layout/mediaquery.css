@@ -1,0 +1,111 @@
+/* This CSS file is responsible for the media query side of the webiste. */
+
+/* Tablet Resolution */
+@media (max-width:1024px){
+
+    /* Div boxes */
+
+    .options a {
+        margin: 0px 32px 0px 0px;
+    }
+
+    .layout {
+        margin:32px;
+        grid-template-areas:
+            "poster1 poster2"
+            "poster3 poster4"
+            "poster5 poster6"
+        ;
+        width:75%;
+    }
+
+    .box, .box2, .box3, .box4, .box5, .box6 {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    /* Media */
+
+    #img1, #img2, #img3, #img4, #img5, #img6 {
+        width:100%;
+        height:auto;
+        object-position: 50% 50%;
+    }
+
+    /* Elements */
+
+    .subbox {
+        height:100%;
+    }
+
+    .subbox2, .subbox3 {
+        height:100%;
+    }
+
+    .subbox, .subbox2, .subbox3 {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    /* I decided to settle with this rather than using its main tag 'button' as I would not be able to modify its specific dimensions
+        within the layout CSS.*/
+    .button, .button2 { 
+        width:100%;
+        height:auto;
+        padding: 15px 25px;
+    }
+
+    /* Fonts */
+
+    .layout p {
+        margin: 15px 0px;
+    }
+
+}
+
+/* Phone Resolution */
+@media (max-width:720px){
+    
+    /* Div Boxes */
+
+    .layout {
+        margin:16px;
+        grid-template-areas:
+            "poster1"
+            "poster2"
+            "poster3"
+            "poster4"
+            "poster5"
+            "poster6"
+        ;
+        width:100%;
+    }
+
+    /* Media */
+
+    #img1, #img2, #img3, #img4, #img5, #img6 {
+        width:100%;
+        height:auto;
+    }
+
+    /* Elements */
+    
+    .button, .button2 {
+        height:auto;
+        padding: 15px 25px;
+        justify-content:center;
+    }
+
+    /* Fonts */
+
+    nav {
+        font-size: 2em;
+    }
+
+    a {
+        display:none;
+    }
+}

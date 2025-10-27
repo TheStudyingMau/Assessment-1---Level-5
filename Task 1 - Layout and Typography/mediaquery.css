@@ -1,0 +1,261 @@
+/* Media Queries */
+/* I placed the Media Queries in a separate CSS file to give some breathing room for the layout CSS file. */
+/* Having it compiled would be harder to modify and harder to navigate through. */
+
+/* This is the tablet resolution CSS */
+@media (max-width:1024px){
+
+    /* HTML */
+
+    nav {
+        margin: 30px;
+    }
+
+    footer {
+        padding: 30px 0px;
+    }
+
+    /* Div Boxes */
+
+    main {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        width:85%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .box1 {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .box2 {
+        align-items: center;
+        text-align: center;
+        column-count: auto;
+        padding: 30px;
+    }
+
+    .box3 {
+        padding: 30px;
+        width:auto;
+    }
+
+    .textbox {
+        padding: 0px;
+    }
+
+    /* Media */
+
+    .gallery {
+        /* I made use of grid as a display to meet the layout's requirements without having to switch back to flex-wrap.*/
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+    }
+
+    /* Making the display none allows me to make the element be hidden.*/
+    #featured {
+        display:none;
+    }
+
+    .logo {
+        width:80px;
+        height:80px;
+    }
+
+    /* Fonts */ 
+
+    a {
+        font-size:larger;
+        margin: 0px 30px;
+    }
+
+    h1, h3 {
+        width:75%;
+    }
+
+    h1, h2, h3, h4 {
+        font-size:48px;
+    }
+
+    main p {
+        font-size:larger;
+        width:90%;
+    }
+
+    .box1 p {
+        padding:0px;
+        margin: 30px 0px;
+        text-align: left;
+    }
+
+    .textbox p {
+        margin: 30px 0px;
+    }
+
+    .box2 p, .box3 p {
+        text-align:left;
+    }
+
+    .box2 p {
+        margin: 30px 0px;
+    }
+    
+    footer p {
+        text-align:center;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+}
+
+/* This is the large phone resolution CSS */
+@media (max-width:720px){
+    
+    /* HTML */
+
+    nav {
+        margin:0px;
+        width:125%;
+        padding: 20px 0px;
+    }
+
+    body {
+        margin:0px;
+    }
+
+    footer {
+        padding: 20px 0px;
+    }
+    
+    /* Div Boxes */
+
+    main {
+        width:100%;
+        padding-top: 20px;
+    }
+
+    .box1 {
+        padding:0px;
+    }
+
+    .box2 {
+        padding: 20px;
+    }
+
+    .box3 {
+        /* Column-reverse helped me so much on reordering my elements when the resolution of my screen changes.*/
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .textbox {
+        width:90%;
+        margin: 20px 0px;
+    }
+    
+
+    /* Media */
+
+    .logo {
+        margin-top:20px;
+    }
+
+    .pfpimg {
+        width:200px;
+        height:200px;
+        margin: 20px 0px;
+    }
+
+    .gallery {
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+    }
+
+    /* Fonts */
+
+    a {
+        font-size:larger;
+        margin:0px 20px;
+    }
+
+    h1, h3 {
+        width:90%;
+    }
+
+    .textbox p {
+        width:100%;
+        margin: 20px 0px;
+    }
+
+    .box1 p, .box2 p {
+        margin: 20px 0px;
+    }
+
+}
+
+/* This is the small phone resolution CSS */
+@media (max-width:540px){
+
+    /* HTML */
+
+    nav {
+        width:100%;
+        padding: 12px 0px;
+    }
+
+    footer {
+        padding: 12px 0px;
+    }
+
+    /* MEDIA */
+
+    .pfpimg {
+        margin: 12px 0px;
+    }
+
+    /* Div Boxes */
+
+    main {
+        padding-top: 12px;
+    }
+
+   .box2 {
+        padding: 12px;
+    }
+
+    .box3 {
+        padding: 12px 0px;
+    }
+
+    /* Fonts */
+
+    a {
+        font-size: 150%;
+        margin: 0px 12px;
+    }
+
+    main p {
+        font-size:125%;
+    }
+
+    main p, .textbox {
+        margin: 12px 0px;
+    }
+
+    footer p {
+        margin: 10px 0px;
+    }
+}

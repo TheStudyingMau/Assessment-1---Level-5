@@ -1,0 +1,45 @@
+/* This CSS file is responsible for color and media for the webiste. */
+/* Color Vision: I tried to go for a darker theme without also having the dark theme overwhelm the website. */
+
+body {
+    background-color: #070410;
+}
+
+nav {
+    background-color: #231651;
+
+    /* The filter attribute allows me to give the element a drop shadow according to its template. */
+    filter: drop-shadow(0px 8px 0px black);
+}
+
+/* Div Boxes */
+
+.search {
+    border-radius: 10px;
+    background-color: #4DCCBD;
+}
+
+.search:hover { /* When search is hovered, the background color changes. */
+    background-color: #EEF36A;
+}
+
+
+button {
+    background-color: #4DCCBD;
+    color:black;
+}
+
+button:hover { /* When buttons are hovered, the background color changes. */
+    background-color: #EEF36A;
+}
+
+article {
+    filter: drop-shadow(8px 8px 0px black);
+    background-color: white;
+}
+
+/* Fonts */
+
+nav p, a {
+    color:white;
+}

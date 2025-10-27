@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Watch.it - Where You Can Watch It</title>
+
+        <!-- Preconnects the fonts that I'll be using for this website.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Links the css styles for the website. -->
+        <!-- HTML flows in a cascading order. Therefore, there's a reason why mediaquery is after color media and layout as one wrong order
+        can affect the CSS of the HTML as a whole. -->
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="colormedia.css">
+        <link rel="stylesheet" href="mediaquery.css">
+
+        <!-- This links the fonts into the HTML-->
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <nav>
+            <p id="logo">watch.it</p>
+            <div class="options">
+                <a>Action</a>
+                <a>Comedy</a>
+                <a>Romance</a>
+                <a>Drama</a>
+            </div>
+            <div class="search">SEARCH</div>
+        </nav>
+    </head>
+
+    <body>
+
+        <main class="layout"> <!-- Main contains all the movie boxes.-->
+
+            <!-- Some elements are grouped within a group to accomplish a certain layout.-->
+            <article class="box"> <!-- The movie box contains all the texts, images, and buttons.-->
+                <img src="assets/barbie.jpg" id="img1">
+                
+                <div class="subbox">  <!-- Subbox groups the texts and the button from the image.-->
+                    <div class="textbox"> <!-- The textvox groups the texts together.-->
+                        <h1>Barbie (2023)</h1>
+                        <p>
+                            Step into the dazzling world of Barbie as she embarks on an unexpected journey from her perfect doll life to the real world.
+                            Filled with humor, heart, and empowering messages, this vibrant adventure redefines what it means to dream big!
+                        </p>
+                    </div>
+                    <button class="button">WATCH NOW</button>
+                </div>  
+            </article>
+
+            <article class="box2">
+                <img src="assets/hidden-figures.jpg" id="img2">
+                <div class="subbox2">
+                    <div class="textbox">
+                        <h1>Hidden Figures (2016)</h1>
+                        <p>
+                            Three unsung heroes of NASA's space race take the spotlight in this inspiring true story.
+                            Battling discrimination and defying the odds, these brilliant African-American women prove that intelligence, 
+                            perseverance, and unity can change history and break barriers.
+                        </p>
+                    </div>
+                    <button class="button2">WATCH NOW</button>
+                </div>  
+            </article>
+
+            <article class="box3">
+                <img src="assets/hook.jpg" id="img3">
+                <div class="subbox2">
+                    <div class="textbox">
+                        <h1>Hook (1991)</h1>
+                        <p>
+                            Rediscover Neverland in this thrilling twist on Peter Pan! Robin Williams stars as a grown-up Peter, 
+                            who must rediscover his inner child to rescue his kids from the clutches of Captain Hook. Adventure, magic, and 
+                            nostalgia blend in this timeless family classic.
+                        </p>
+                    </div>
+                    <button class="button2">WATCH NOW</button>
+                </div>  
+            </article>
+
+            <article class="box4">
+                <img src="assets/la-la-land.jpg" id="img4">
+                <div class="subbox3">
+                    <div class="textbox">
+                        <h1>La La Land (2016)</h1>
+                        <p>
+                            Love, dreams, and the magic of LA take center stage in this musical masterpiece. Watch as two starry-eyed artists 
+                            navigate passion and ambition in a world where every moment feels like a cinematic spectacle!
+                        </p>
+                    </div>
+                    <button class="button2">WATCH NOW</button>
+                </div>  
+            </article>
+
+            <article class="box5">
+                <img src="assets/palm-springs.jpg" id="img5">
+                <div class="subbox3">
+                    <div class="textbox">
+                        <h1>Palm Springs (2020)</h1>
+                        <p>
+                            A never-ending wedding day turns into an unforgettable time-loop romance! Stuck in the same day, two strangers find love,
+                            chaos, and meaning in the most unexpected ways.
+                        </p>
+                    </div>
+                    <button class="button2">WATCH NOW</button>
+                </div>  
+            </article>
+
+            <article class="box6">
+                <img src="assets/who-framed-roger-rabbit.jpg" id="img6">
+                <div class="subbox3">
+                    <div class="textbox">
+                        <h1>Who Framed Roger Rabbit (1988)</h1>
+                        <p>
+                            In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery. 
+                            Packed with wild humor, groundbreaking animation, and noir twists, this unique film will pull you into a world 
+                            where anything is possible!
+                        </p>
+                    </div>
+                    
+                    <button class="button2">WATCH NOW</button>
+                </div>  
+            </article>
+        </main>
+
+    </body>
+</html>

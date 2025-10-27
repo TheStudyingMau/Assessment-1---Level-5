@@ -1,0 +1,207 @@
+/* This CSS file controls the main layout of the website */
+/* Margins are mainly used for spacing between the elements.*/
+/* Padding is sometimes used to add spacing between the text and its container.*/
+
+body {
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+nav {
+    width:100%;
+    padding: 16px 10px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; /* Utilized space between to give some spacing between the elements within the nav*/
+    align-content: center;
+}
+
+.options {
+    align-content: center; /* Supposed to align the link tags with the other elements in the navigation bar.*/
+}
+
+.options a {
+    margin: 0px 48px;
+}
+
+/* Div Boxes */
+
+.layout {
+    margin:48px;
+
+    display:grid;
+    justify-items: center;
+    width: 900px; /* Sets the main content's maximum width to 900px */    
+    grid-template-areas: /* I decided to use grid-template-areas to properly capture the layout */
+        "poster1 poster1"
+        "poster2 poster3"
+        "poster4 poster4"
+        "poster5 poster5"
+        "poster6 poster6"
+    ;
+    gap:35px;
+}
+
+.box {
+    grid-area: poster1;
+}
+
+
+.box2 { 
+    grid-area: poster2;
+    
+    display:flex;
+    flex-direction: column;
+}
+
+.box3 {
+    grid-area: poster3;
+    display:flex;
+    flex-direction: column;
+}
+
+.box4 {
+    grid-area: poster4;
+    display:flex;
+    flex-direction: row;
+}
+
+.box5 {
+    grid-area: poster5;
+    display:flex;
+    flex-direction: row;
+}
+
+.box6 {
+    grid-area: poster6;
+    display:flex;
+    flex-direction: row;
+}
+
+/* Box Elements */
+
+.search {
+    margin-right: 10px;
+    padding: 10px 10px;
+    align-content: center;
+}
+
+.textbox {
+    display:flex;
+    flex-direction: column;
+}
+
+.subbox {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+.subbox2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+}
+
+.subbox3 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 50%;
+}
+
+.subbox, .subbox2, .subbox3 {
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.button {
+    width:70%;
+    height:120px;
+}
+
+.button2 {
+    height:50px;
+}
+
+button {
+    display:flex;
+    border-radius: 16px;
+    border: 16px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Media */
+
+#img1 {
+    width:100%;
+    height:250px;
+    object-fit: cover; /* Cover sets the object centered to its container. */
+    object-position: 0px -250px; /* Adjusted the position of the image to make it more centered.*/
+}
+
+#img2, #img3 {
+    width:445px;
+    height:415px;
+    object-fit: cover; 
+}
+
+
+#img4, #img5, #img6 {
+    width:450px;
+    height:100%;
+    object-fit: cover;
+}
+
+/* Fonts */
+
+#logo {
+    margin: 0px;
+    margin-left: 25px;
+    align-content:center;
+}
+
+h1 {
+    margin: 16px;
+    font-family: "Teko", sans-serif;
+    font-size:3em; /* Font is 3 times the size of its initial size */
+    line-height: 1.0; /* Adjusts line height to the header texts */
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em; /* Had this different in the boxes to balance the sizing. */
+}
+
+.subbox p {
+    margin: 0px 16px;
+}
+
+.subbox2 p, .subbox3 p {
+    margin: 16px 0px;
+}
+
+.button, .button2, .search, a, #logo {
+    font-family: "Teko", sans-serif;
+}
+
+nav {
+    font-size: 3em; /* Font is 3 times the size of its initial size */
+}
+
+a {
+    font-size: large; /* Had this different in the boxes to balance the sizing. */
+    align-content: center;
+}
+
+
+
+
+
