@@ -2,6 +2,8 @@
 This repository consists of my accomplishments of the challenges given by my assessments Regarding responsive Web Designing. I did my best on replicating the layout of the requirements while also maintaining the required specifications such as spacing, sizing, and etc.
 
 # Brief Synopsis
+We were taught on how to improve our websites having it respond to different screen resolutions. It can either be resizing elements or a completely different layout. We absorbed the teaching material by exercising it through two tasks:
+
 **Folder 1 - Task 1: Responsive Layout and Typography**<br>
 **Folder 2 - Task 2: Advanced Layout**
 
